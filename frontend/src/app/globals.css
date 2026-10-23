@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-netflix-black: #141414;
+  --color-netflix-red: #E50914;
+  --color-glass: rgba(20, 20, 20, 0.7);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --font-sans: "Inter", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  background-color: var(--color-netflix-black);
+  color: white;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Hide Scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}

@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production & Build Artifacts
+.next/
+out/
+build/
+dist/
+
+# Python & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+env/
+venv/
+.venv/
+
+# Large ML Model Weights (>100MB exceeds GitHub push limit)
+models/item_cf_model.pkl
+models/svd_model.pkl
+models/user_cf_model.pkl
+
+# Raw & Processed Datasets
+data/raw/
+data/processed/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS & IDE Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
